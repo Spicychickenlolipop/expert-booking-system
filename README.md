@@ -73,31 +73,87 @@ expert-booking-system/
 │   └── vite.config.js
 │
 └── README.md
+```
 
+---
 
-# Installation## Clone Repository```bashgit clone https://github.com/Spicychickenlolipop/expert-booking-system.git
+# Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Spicychickenlolipop/expert-booking-system.git
 cd expert-booking-system
+```
 
-Backend Setup
+---
+
+# Backend Setup
+
+```bash
 cd backend
+```
+
 Install dependencies:
+
+```bash
 npm install
-Create .env file:
-PORT=5000MONGO_URI=your_mongodb_connection_string
+```
+
+Create `.env` file:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
 Run backend server:
-npm run dev
 
-Frontend Setup
+```bash
+npm run dev
+```
+
+---
+
+# Frontend Setup
+
 Open another terminal:
+
+```bash
 cd frontend
+```
+
 Install dependencies:
+
+```bash
 npm install
+```
+
 Run frontend:
+
+```bash
 npm run dev
+```
 
-API Endpoints
-Expert Routes
-MethodEndpointDescriptionGET/api/expertsGet all expertsGET/api/experts/:idGet expert details
+---
 
-Booking Routes
-MethodEndpointDescriptionPOST/api/bookingsCreate bookingGET/api/bookingsGet bookings by email
+# API Endpoints
+
+## Expert Routes
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/experts | Get all experts |
+| GET | /api/experts/:id | Get expert details |
+
+---
+
+## Booking Routes
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | /api/bookings | Create booking |
+| GET | /api/bookings | Get bookings by email |
+
+---
+
