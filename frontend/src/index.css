@@ -534,3 +534,8 @@ body::before {
     grid-template-columns: 1fr;
   }
 }
+
+select option {
+  background: #0f172a;
+  color: white;
+}
